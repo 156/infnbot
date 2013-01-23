@@ -11,8 +11,8 @@ If you need to install megahal on debian just type sudo apt-get install megahal
 
 You might also need to do the following:
 
-sudo apt-get install cpanm
-sudo cpanm POE::Component::IRC
+sudo apt-get install cpanm;
+sudo cpanm POE::Component::IRC;
 sudo cpanm AI::MegaHAL
 
 
