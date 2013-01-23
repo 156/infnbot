@@ -128,16 +128,6 @@ sub on_public {
   AI::MegaHAL::megahal_cleanup();
 }
 
-sub irc_dcc_request {
-     my ($user, $type, $port, $cookie, $file, $size, $addr) = @_[ARG0..$#_];
-     return if $type ne 'SEND';
-
-     my $irc = $_[SENDER]->get_heap();
-     my $nick = (split /!/, $user)[0];
-
-     $irc->yield(dcc_accept => $cookie);
- }
-
 $poe_kernel->run();
 
 exit 0;
