@@ -1,5 +1,6 @@
 #!/usr/local/bin/perl
-#
+
+#no license infnbot.pl theinfinitynetwork.org
 
 use Getopt::Std;
 
